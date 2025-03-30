@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "apps.writing_assistant",
     "apps.users",
     "rest_framework",
+    'rest_framework_simplejwt.token_blacklist',
     "corsheaders",
     # "debug_toolbar",
 ]
@@ -152,6 +153,25 @@ REST_FRAMEWORK = {
     ),
 }
 
+from datetime import timedelta
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),  # Set token expiration time
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ROTATE_REFRESH_TOKENS": True,
+    "BLACKLIST_AFTER_ROTATION": True,  # Ensure tokens are blacklisted after logout
+    "ALGORITHM": "HS256",
+    "SIGNING_KEY": SECRET_KEY,
+    "AUTH_HEADER_TYPES": ("Bearer",),
+}
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React app URL
 ]
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"  # Use your email provider's SMTP server
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "giaphucnguyen200441@gmail.com"
+EMAIL_HOST_PASSWORD = "bwsv spft ghjl omgt"
+DEFAULT_FROM_EMAIL = "Echo Mind"

@@ -12,7 +12,7 @@ function Verify() {
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-7xl font-bold text-center'>XÁC MINH TÀI KHOẢN</h1>
                     <p className='text-center mt-4 text-lg'>
-                        Bạn sắp hoàn thành rồi! Chúng tôi đã gửi mã xác minh đến your-email@example.com
+                        Bạn sắp hoàn thành rồi! Chúng tôi đã gửi đường dẫn xác nhận đến email của bạn.
                     </p>
 
                     <div>
