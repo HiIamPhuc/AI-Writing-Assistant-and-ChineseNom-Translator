@@ -10,14 +10,17 @@ const Hero: React.FC = () => {
         
         {/* Nút Get Started - Đặt ngay dưới hình */}
         <div className="absolute w-full flex justify-center -bottom-20">
-          <button
+            <button
             className="text-white font-medium px-12 py-4 rounded-full text-xl shadow-lg hover:shadow-xl transition-all"
             style={{
               background: 'linear-gradient(290deg, #00DFA8, #028DC9)',
             }}
-          >
+            onClick={() => {
+              window.location.href = '/signup';
+            }}
+            >
             Get started
-          </button>
+            </button>
         </div>
       </div>
 
