@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
               background: 'linear-gradient(290deg, #00DFA8, #028DC9)',
             }}
             onClick={() => {
-              window.location.href = '/signup';
+              window.location.href = '/signup'; 
             }}
             >
             Get started
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         <h1 className="text-6xl font-bold mb-3 text-gradient-start text-left">Echo Mind</h1>
         <h2 className="text-3xl font-medium mb-5 text-black text-left">Writing Assistant</h2>
         <p className="text-xl mx-auto text-black text-left leading-relaxed">
-          Echo Mind không chỉ là một AI thông minh – mà còn là người bạn đồng hành giúp bạn tư duy nhanh hơn, làm việc hiệu quả hơn và sáng tạo đột phá hơn. Từ trợ lý ảo đa năng đến công cụ hỗ trợ viết lách, chúng tôi mang đến giải pháp AI mạnh mẽ, trực quan và dễ sử dụng, giúp bạn tối ưu mọi khía cạnh trong cuộc sống và công việc.
+        Echo Mind không chỉ là một AI thông minh – mà còn là người bạn đồng hành giúp bạn tư duy nhanh hơn, làm việc hiệu quả hơn và sáng tạo đột phá hơn. Từ trợ lý ảo đa năng đến công cụ hỗ trợ viết lách, chúng tôi mang đến giải pháp AI mạnh mẽ, trực quan và dễ sử dụng, giúp bạn tối ưu mọi khía cạnh trong cuộc sống và công việc.
         </p>
       </div>
     </div>
