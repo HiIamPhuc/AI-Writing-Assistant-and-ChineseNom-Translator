@@ -21,7 +21,7 @@ db.sqlite3
 .env
 *.env
 *.sqlite3
-/media
+media/
 /staticfiles
 *.log
 
